@@ -1,0 +1,27 @@
+{
+  "name": "sync-step-runner",
+  "version": "1.0.0",
+  "description": "Run several runner async but sync at all",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ZxBing0066",
+  "license": "Apache-2.0",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZxBing0066/sync-step-runner.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "bugs": {
+    "url": "https://github.com/ZxBing0066/sync-step-runner/issues"
+  },
+  "homepage": "https://github.com/ZxBing0066/sync-step-runner#readme"
+}
