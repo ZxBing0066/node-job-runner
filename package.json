@@ -4,7 +4,7 @@
   "description": "Run several runner async but sync at all",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "ZxBing0066",
   "license": "Apache-2.0",
@@ -12,7 +12,11 @@
     "test": "test"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^3.4.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZxBing0066/sync-step-runner.git"
