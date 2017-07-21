@@ -4,7 +4,8 @@
   "description": "Run several runner async but sync at all",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "tsc"
   },
   "author": "ZxBing0066",
   "license": "Apache-2.0",
