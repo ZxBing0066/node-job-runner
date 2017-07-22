@@ -1,8 +1,19 @@
 language: node_js
 node_js:
-    - "6.11.1"
-    - "7.10.1"
-    - "8.2.1"
+  - 6.11.1
+  - 7.10.1
+  - 8.2.1
 before_script:
-    - npm i -g typescript
-    - tsc
+  - npm i -g typescript
+  - tsc
+before_deploy:
+  - npm i -g typescript
+  - tsc
+deploy:
+  provider: npm
+  email: ZxBing0066@gmail.com
+  api_key: RVJH6QUHXZQemjd1OR2nfb6Q73cUoDPiasj1eCWDZr0U3qxfXo4sjSieKgWLn00P2hbW66bjGyM2FE+nrsdrSVjL9TUPRrMQmmJPA158tnG7RCFxO4sfKXkjp35b337Vk+83cAeu1yjhX38OPbnXeEynpGHpHAN5JG+addp6MElJZhi6UlHE4r6TAKMx4c68fHlBkH2O4ctWvOvJfUL0dtBN3qr0gAsrCIsU8DMKmU7qIVlWiTei/XunrtrtgkEIShOgbBdLCxMxn6SSVHs0FcEoZ0K9hH6s05INJ/SLTTzm3lfuMgwORWfL1E27zXY8QssSYBVwmzsXgyMcNPe3FR/F3kHFkWI9Lyv4NwaTOSMtdAHAR6cC39KOINz8AzK6Cx7TzKiPvRZ1h2Y4B4QRIUS+w4HOQ9iaIPTyieN9lxW3Z1DYzjB8dXxNgnwgX3rF3FjUzolUzBCdqskXsrmaB3eT2hHbR5PqG/cOohH50yJ4ONYCxcfuxj8lJXoDSOydlSd7GINtHc7d+v5oDYS3QWKblWxSbSwCGakRKkrCcqKXdEiBWvpE9AomwGxOhob1FnEeFMHkpNyAb7cmPgdbjCNYIK0BteepNFw3Kry4L23eTtV0eDlPuywL4TyY5ERbhw00fMqgqV8C51RHLCK8SWccL+NK+2NhC7PJaou2JLQ=
+  on:
+    tags: true
+    branch: master
+    tag: next
