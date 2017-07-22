@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-- 6.11.X
-- 7.10.X
-- 8.2.X
+- 6.*
+- 7.*
+- 8.*
 before_script:
 - npm i -g typescript
 - tsc
