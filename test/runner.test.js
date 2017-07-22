@@ -8,7 +8,7 @@ let source = require('./source')
 let sourceData = source.map(d => d.data)
 
 describe('Runner group test', function () {
-    // this.timeout(1000 * 60 * 5);
+    this.timeout(1000 * 60 * 5);
 
     let result;
     let order = [];
