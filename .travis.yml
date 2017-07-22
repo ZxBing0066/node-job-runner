@@ -1,18 +1,19 @@
 language: node_js
 node_js:
-  - 6.11.1
-  - 7.10.1
-  - 8.2.1
+- 6.11.1
+- 7.10.1
+- 8.2.1
 before_script:
-  - npm i -g typescript
-  - tsc
+- npm i -g typescript
+- tsc
 before_deploy:
-  - npm i -g typescript
-  - tsc
+- npm i -g typescript
+- tsc
 deploy:
   provider: npm
   email: ZxBing0066@gmail.com
-  api_key: RVJH6QUHXZQemjd1OR2nfb6Q73cUoDPiasj1eCWDZr0U3qxfXo4sjSieKgWLn00P2hbW66bjGyM2FE+nrsdrSVjL9TUPRrMQmmJPA158tnG7RCFxO4sfKXkjp35b337Vk+83cAeu1yjhX38OPbnXeEynpGHpHAN5JG+addp6MElJZhi6UlHE4r6TAKMx4c68fHlBkH2O4ctWvOvJfUL0dtBN3qr0gAsrCIsU8DMKmU7qIVlWiTei/XunrtrtgkEIShOgbBdLCxMxn6SSVHs0FcEoZ0K9hH6s05INJ/SLTTzm3lfuMgwORWfL1E27zXY8QssSYBVwmzsXgyMcNPe3FR/F3kHFkWI9Lyv4NwaTOSMtdAHAR6cC39KOINz8AzK6Cx7TzKiPvRZ1h2Y4B4QRIUS+w4HOQ9iaIPTyieN9lxW3Z1DYzjB8dXxNgnwgX3rF3FjUzolUzBCdqskXsrmaB3eT2hHbR5PqG/cOohH50yJ4ONYCxcfuxj8lJXoDSOydlSd7GINtHc7d+v5oDYS3QWKblWxSbSwCGakRKkrCcqKXdEiBWvpE9AomwGxOhob1FnEeFMHkpNyAb7cmPgdbjCNYIK0BteepNFw3Kry4L23eTtV0eDlPuywL4TyY5ERbhw00fMqgqV8C51RHLCK8SWccL+NK+2NhC7PJaou2JLQ=
+  api_key:
+    secure: RYon9ow4L8La74F5P0Mp8vxZRjcivhUs/9I69j5hYMFqwewFOxdJ+7AiQgS8GQ2Qj6V5EdHvZ/b3M6HMKWl43GS8EgeydkuvWOceZoYget+CViXkDpX9CphD3mK2LQ9DwwqlThGAQMEmHYlEJr1X9/X1s5RMg/UsO4bcuZAUSRnb9U/ynqHmWrxDEo6oa1dwfz/pQ7XneC2ipff1CBNpaUPkYa27q9wXAlPcx6jC691sT2LsDlndm/zVMMuoPYarP0gORPqkFlKRanLFV0EjTbLg8ayg39AWt0qNbCw/e/AWItcXMQ3xg15NXhe0qTjfLukAmb7SjsvcX2r9nbKG4hRcifqA/9kPxm09FxxabBvKXr9GL1ELRhNlB4xdxXf1Lbt0POweqYk2MODXhfflKk21rvZJRUnYgoGogOBjNd+B4ZgnnmJoAx1g0VKG1zvp/3GXt2KgwBLlolawOr4JLz8QzYjz1+wKOYIBK5+USV5EV/2vaEmWDj2KwtCoFzoo13OqB9PnVvg/y8mw6jjb2yMKTcroJewSl4tPbtzMOK1HKUrtf5gKumx7wsmUNr++ewD/NbfhgFwe/j6pxSDVJFwrae2CMs/ztBOeT5uYDWMQ9rQuwF0EyygSbCUwcjEfhuXeOmpGiD4v5bt70cKT8QdlUnq3O4P/eu7ry9exOPU=
   on:
     tags: true
     branch: master
