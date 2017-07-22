@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-- 6.11.1
-- 7.10.1
-- 8.2.1
+- 6.11.X
+- 7.10.X
+- 8.2.X
 before_script:
 - npm i -g typescript
 - tsc
@@ -10,6 +10,7 @@ before_deploy:
 - npm i -g typescript
 - tsc
 deploy:
+  skip_cleanup: true
   provider: npm
   email: ZxBing0066@gmail.com
   api_key:

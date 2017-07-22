@@ -2,4 +2,3 @@ node_modules
 .vscode
 index.ts
 *.log
-!index.js
