@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec",
-    "codecov": "cat coverage/lcov.info && codecov -f coverage/*.json",
+    "codecov": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec && ./node_modules/.bin/codecov",
     "build": "tsc"
   },
   "author": "ZxBing0066",
