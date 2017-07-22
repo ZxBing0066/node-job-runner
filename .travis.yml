@@ -6,8 +6,8 @@ node_js:
 before_script:
 - npm i -g typescript istanbul
 - tsc
-script: npm run codecov
-  on: node: 8.*
+after_script: 
+- node -v | grep v8.* && npm run codecov
 deploy:
   - provider: releases
     skip_cleanup: true
