@@ -11,11 +11,21 @@ before_deploy:
 - tsc
 deploy:
   skip_cleanup: true
-  provider: npm
-  email: ZxBing0066@gmail.com
-  api_key:
-    secure: lQyURyPedsfkEo0E5Y8rc1KEsctv3cG3R1eZ5xK4y0Fk7xcJ8bu7z8MZtmtTxBIhdTRH6DoQCz/qSHSc26trRugaJsZ/RqhZPDbibiDgkwsgu7WLDxBg5tU0GnhvyZ39T9dCC/sxNpyXImWOC4au55hlwA9Tmiyx1K74LDE9rxMn9u8W6CzIYMIJc4+0cZMUCEilphAS9THupliIVdlQbZ7e8cZyrjNJZr9ksZCPpHBat+IlM2aPvUgME08U1SkaCnV+H0qs8XkmvwoL5+z1FNnhHcb2Ntus+/3Y2mrxmJzMmg1l12kmK93M+RxKDLjW/jJ9Dxnrhgt6H0uvqp2fLvtwllCldt9Mfp8rfsL0IitnX2FPP4qBGyNB2QHtXXfux1NvvFoNWbvF3qQ9gih4sbQO8o+/iOjuMIjGPbRJPFSuogwwGhY2FhQCeIE5eGq3nB+a9EgRgtoJ8rsxtcRuLBbjFqJcVcmxQOcUX8L5JXNxYMhqabFyupT2C3Z0ijPho4CHTph9lbLd6F2zb91CmAHPxUdzcFZbRG48PC2JUBhn7a/yw6JV68Xc4YQzWH/x3SYxTjzljh2qhnnW7XYmll8syuZPxi7WykCRCuuzmiooks6V8qlHJnKqKByYlb3W6uLPE8fFW8Mc4SuC7aeBK1718fR8TK7TOLTXUJNv7i8=
-  on:
-    tags: true
-    branch: master
-    tag: next
+  - provider: releases
+    api_key:
+      secure: QRn1UOIOe6q3dj43vXuwpBRMmCRYB4y+m/OwO4Fv1uZt5DHd+t67T5g/UZqfwMf9a3PDTrDXsVbgFLdQl/Ut7udT6wHH1RZ7CCEBUVYKAQbzBvw6cJ8shKuYKDS0sUBXfu2r8zp0kALl7hx9gASYBaBA+5hcsNaCvyWKT4cK+NlkF1NVrxzCx/8WLOgqXmZ+JcZDcbRizkqRqMwS9MeL7I2hgjwp3DgtJjKl2fn/hR6io6CB1Xs1UO5bFNGv7e6J/SIxGbJfTacZETTCjSSi3/Xh3QaB17sw3tFKsma+35D5MH+D6AeLWEvH/098VvfivWH7BBQMpvH0yZ/RdmjMjEwUUQtdO12MgT4gMTq7o8fiFatqjMiaZg/g+efjwMXaNGAC/z4VepX9yNO64kzgNMYo7/lHpAbMpkoDZh/kPd3ErkKW4QgZS2SljM5x0iRe4whspnWGXrHcMaDdksEUT0TbwWLm5qm8bUfH8OYlhuGWyXfH2CwKehVl+ZnQsmp1eL6+QUQiw49LfCfMR2kLYcd3CHvA5ac02agp6O4cIOPOiWl/nfmdp//osRmRNw95JW84w/tasyue1UibkTRp+l0Wu1M9bgTN6o9JTsQwsCCCupOybyjVLzpsP0ZWrCKSRTzXkchlFkCP8RfY13SewEr1dHqh++cOsriADjoRkIk=
+    file: index.js
+    on:
+      tags: true
+      branch: master
+      tag: next
+      node: 8.*
+  - provider: npm
+    email: ZxBing0066@gmail.com
+    api_key:
+      secure: lQyURyPedsfkEo0E5Y8rc1KEsctv3cG3R1eZ5xK4y0Fk7xcJ8bu7z8MZtmtTxBIhdTRH6DoQCz/qSHSc26trRugaJsZ/RqhZPDbibiDgkwsgu7WLDxBg5tU0GnhvyZ39T9dCC/sxNpyXImWOC4au55hlwA9Tmiyx1K74LDE9rxMn9u8W6CzIYMIJc4+0cZMUCEilphAS9THupliIVdlQbZ7e8cZyrjNJZr9ksZCPpHBat+IlM2aPvUgME08U1SkaCnV+H0qs8XkmvwoL5+z1FNnhHcb2Ntus+/3Y2mrxmJzMmg1l12kmK93M+RxKDLjW/jJ9Dxnrhgt6H0uvqp2fLvtwllCldt9Mfp8rfsL0IitnX2FPP4qBGyNB2QHtXXfux1NvvFoNWbvF3qQ9gih4sbQO8o+/iOjuMIjGPbRJPFSuogwwGhY2FhQCeIE5eGq3nB+a9EgRgtoJ8rsxtcRuLBbjFqJcVcmxQOcUX8L5JXNxYMhqabFyupT2C3Z0ijPho4CHTph9lbLd6F2zb91CmAHPxUdzcFZbRG48PC2JUBhn7a/yw6JV68Xc4YQzWH/x3SYxTjzljh2qhnnW7XYmll8syuZPxi7WykCRCuuzmiooks6V8qlHJnKqKByYlb3W6uLPE8fFW8Mc4SuC7aeBK1718fR8TK7TOLTXUJNv7i8=
+    on:
+      tags: true
+      branch: master
+      tag: next
+      node: 8.*
