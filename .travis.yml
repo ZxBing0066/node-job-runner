@@ -6,8 +6,7 @@ node_js:
 before_script:
 - npm i -g typescript istanbul
 - tsc
-script:
-- npm run codecov
+script: npm run codecov
   on: node: 8.*
 deploy:
   - provider: releases
