@@ -4,17 +4,17 @@
   "description": "Run several runner async but sync at all",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && codecov",
     "build": "tsc"
   },
   "author": "ZxBing0066",
   "license": "Apache-2.0",
-  "directories": {
-  },
+  "directories": {},
   "dependencies": {},
   "devDependencies": {
     "chai": "^4.1.0",
     "chai-as-promised": "^7.1.1",
+    "codecov": "^2.2.0",
     "mocha": "^3.4.2"
   },
   "repository": {
