@@ -1,5 +1,6 @@
 node_modules
 .vscode
-index.ts
 *.log
 coverage
+.npmignore
+*.yml
