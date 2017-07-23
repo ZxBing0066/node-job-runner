@@ -20,13 +20,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZxBing0066/sync-step-runner.git"
+    "url": "git+https://github.com/ZxBing0066/node-job-runner.git"
   },
   "keywords": [
     "node"
   ],
   "bugs": {
-    "url": "https://github.com/ZxBing0066/sync-step-runner/issues"
+    "url": "https://github.com/ZxBing0066/node-job-runner/issues"
   },
-  "homepage": "https://github.com/ZxBing0066/sync-step-runner#readme"
+  "homepage": "https://github.com/ZxBing0066/node-job-runner#readme"
 }
