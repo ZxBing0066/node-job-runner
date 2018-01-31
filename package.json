@@ -1,32 +1,31 @@
 {
-  "name": "job-runner",
-  "version": "0.1.4",
-  "description": "Run several runner async but sync at all",
-  "main": "index.js",
-  "scripts": {
-    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec",
-    "codecov": "node -v | grep v8.* && istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/codecov",
-    "build": "tsc"
-  },
-  "author": "ZxBing0066",
-  "license": "Apache-2.0",
-  "directories": {},
-  "dependencies": {},
-  "devDependencies": {
-    "chai": "^4.1.0",
-    "chai-as-promised": "^7.1.1",
-    "codecov.io": "^0.1.6",
-    "mocha": "^3.4.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ZxBing0066/node-job-runner.git"
-  },
-  "keywords": [
-    "node"
-  ],
-  "bugs": {
-    "url": "https://github.com/ZxBing0066/node-job-runner/issues"
-  },
-  "homepage": "https://github.com/ZxBing0066/node-job-runner#readme"
+    "name": "job-runner",
+    "version": "0.1.5",
+    "description": "Run several runner async but sync at all",
+    "main": "index.js",
+    "scripts": {
+        "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec",
+        "codecov":
+            "node -v | grep v8.* && istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/codecov",
+        "build": "tsc"
+    },
+    "author": "ZxBing0066",
+    "license": "Apache-2.0",
+    "directories": {},
+    "dependencies": {},
+    "devDependencies": {
+        "chai": "^4.1.0",
+        "chai-as-promised": "^7.1.1",
+        "codecov.io": "^0.1.6",
+        "mocha": "^3.4.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ZxBing0066/node-job-runner.git"
+    },
+    "keywords": ["node"],
+    "bugs": {
+        "url": "https://github.com/ZxBing0066/node-job-runner/issues"
+    },
+    "homepage": "https://github.com/ZxBing0066/node-job-runner#readme"
 }
