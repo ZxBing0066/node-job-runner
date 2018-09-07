@@ -1,12 +1,11 @@
 {
     "name": "job-runner",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "Run several runner async but sync at all",
     "main": "index.js",
     "scripts": {
         "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec",
-        "codecov":
-            "node -v | grep v8.* && istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/codecov",
+        "codecov": "node -v | grep v8.* && istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/codecov",
         "build": "tsc"
     },
     "author": "ZxBing0066",
@@ -23,7 +22,9 @@
         "type": "git",
         "url": "git+https://github.com/ZxBing0066/node-job-runner.git"
     },
-    "keywords": ["node"],
+    "keywords": [
+        "node"
+    ],
     "bugs": {
         "url": "https://github.com/ZxBing0066/node-job-runner/issues"
     },
