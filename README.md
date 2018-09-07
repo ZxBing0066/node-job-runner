@@ -35,8 +35,7 @@ let runner = new Runner({
 or use the create function:
 
 ```js
-let Runner = jobRunner.default;
-let runner = new Runner({
+let runner = jobRunner.create({
     source: [1,2,3],
     step: 2,
     runner: (sourceData, index) => {
